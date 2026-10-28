@@ -1,4 +1,5 @@
 export const DIRS = { up:[-1,0], right:[0,1], down:[1,0], left:[0,-1] };
+export function roomIndex(value){const room=Number(value);return Number.isInteger(room)&&room>=1&&room<=LEVELS.length?room-1:0;}
 export const LEVELS = [
  {name:['A little spark','初见微光'],note:['Find your own half-heart. Meet at the two arches.','找到各自的半颗爱心，在两座拱门相会。'],map:['#######','#0.x.X#','#.....#','#..#..#','#.....#','#1.y.Y#','#######']},
  {name:['Hold the door','为你留门'],note:['A moon plate opens every moon gate. Your partner can hold the other plate.','站上月亮机关打开月门，伙伴可接替另一边的机关。'],map:['#########','#0.a#x.X#','#...A...#','#...#a..#','#1.y#..Y#','#########']},
