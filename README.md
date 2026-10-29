@@ -1,157 +1,115 @@
+[English](README.md) · [简体中文](README.zh-CN.md) · [Español](README.es.md) · [Português (Brasil)](README.pt-BR.md) · [日本語](README.ja.md)
+
 # Haunted Hearts — Halloween Co-op Puzzle Game
 
-**Some doors only open when we help each other.** Haunted Hearts is a free Halloween puzzle from Midnight Candy Club, created for [Love Game](https://love-game.org/). Guide two friendly ghosts through eight little haunted rooms, recover their half-hearts, share a lantern, and bring them safely home.
+👻 Two little ghosts, two half-hearts, and one lantern to share. Guide Luna and Rose through eight haunted rooms where a helpful partner can open the way home. Play this gentle Halloween logic game alone by switching characters, or share one device and plan the next move together.
 
-**[Play online](https://halloween-love-game.crazy3d.org/)** · [Embedding guide](EMBEDDING.md)
+**[Play online](https://halloween-love-game.crazy3d.org/)** · [Explore all 12 Halloween games](https://github.com/AshinTop/halloween-games) · [⭐ Star this repository](https://github.com/AshinTop/halloween-love-game)
 
-**Live deployment:** Play on Cloudflare using the link above. The site is deployed from this GitHub repository. Hosting scripts and request logging may be added by Cloudflare independently of the game code.
+README translations cover five languages. The **game interface currently supports English and Simplified Chinese only**.
 
-[Video player and transcript](https://halloween-love-game.crazy3d.org/intro.html) · [Captioned MP4 file](docs/media/intro.mp4). The 24-second silent introduction uses actual game screenshots; it is not a live gameplay recording.
+![Haunted Hearts Halloween puzzle with Luna, Rose, colored heart goals, pressure gates, and a shared lantern](docs/images/gameplay.jpg)
 
-![Haunted Hearts: Luna and Rose in a Halloween puzzle room with colored heart goals, pressure gates, and a shared lantern](docs/images/gameplay.jpg)
+## What makes it special
 
-Enjoy a little cooperative puzzle solving? **[Star this repository](https://github.com/AshinTop/halloween-love-game)** to save Haunted Hearts and follow future improvements.
-
-## A gentle escape-room adventure for two little souls
-
-Luna and Rose each have a half-heart to collect and a matching arch to reach. You can guide both ghosts yourself by switching the active character, or share one device and discuss or take turns making moves.
-
-The rooms gradually add cooperative ideas. Standing on a moon or star plate holds the matching gates open. Colored tiles belong to only one ghost, so the partners may need different routes. Later, a single lantern lets its carrier enter mist; pass it when the two ghosts are adjacent so both can cross.
-
-It is a logic puzzle about helping a partner. There is no timer, online matchmaking, chat, relationship score, or need for an account.
-
-## Features
-
-- **Eight single-screen rooms**, each with a complete solver-verified route.
-- Two independently controlled ghosts, personal heart collectibles, and separate home arches.
-- Pressure plates and matching gates, role-specific paths, mist, and one shared lantern.
-- Unlimited undo and restart, room selection, and a real next-step hint from the current position.
-- Local best move counts for each room, room links, and sharing based on the actual result.
-- Original SVG ghost characters, illustrated scenery, synthesized sound, and a persistent mute option.
-- English and Simplified Chinese, touch controls, adjacent-tile tapping, keyboard play, and reduced-motion support.
-- A compact iframe layout that keeps the essential controls usable in the main site’s small game stage.
-- Static HTML/CSS/ES modules with no framework, backend, CDN, installation, or external runtime assets.
+- Eight single-screen rooms introduce gates, personal paths, and lantern sharing in small steps.
+- Two independently controlled ghosts have their own heart halves and home arches.
+- Unlimited undo, restart, and a solver-backed next-step hint leave room to experiment.
+- Best move records and room links give completed puzzles a reason to revisit.
+- Original SVG scenery, optional synthesized sound, touch and keyboard controls, and reduced-motion support.
 
 ## How to play
 
-1. Choose Luna or Rose and move the active ghost.
-2. Collect Luna’s blue half-heart and Rose’s pink half-heart. Each ghost collects only its own.
-3. Stand on moon or star pressure plates to hold their corresponding gates open. A partner can take over a plate on the other side.
-4. Respect the character-only tiles: Luna uses blue moon tiles; Rose uses pink rose tiles.
-5. Pick up the lantern to enter mist. When the ghosts are next to each other, pass it to the partner who needs it.
-6. Finish with both hearts collected and both ghosts on their own arches.
+Select Luna or Rose, collect each ghost’s own half-heart, then finish with both ghosts on their matching arches. Luna uses blue moon tiles and collects the blue heart; Rose uses pink rose tiles and collects the pink heart. They cannot occupy the same square.
 
-A ghost already standing in mist may leave it after passing the lantern away. Ghosts cannot occupy the same square. Pressure gates depend on where the characters are standing, so plan who holds the door before moving through it.
+Moon and star pressure plates hold their matching gates open **while occupied**. Before leaving a plate, check whether the partner still needs the door. A second plate can let one ghost take over the job.
+
+The shared lantern allows its carrier to **enter mist**. Pass it when the ghosts stand next to each other. A ghost already in mist may leave after giving the lantern away, which makes some crossings possible.
+
+The eight rooms progress from a simple reunion to combined door-and-lantern puzzles. There is no timer or move limit. Their verified shortest starting routes use **8, 18, 22, 20, 19, 24, 28, and 30 moves**; these are replay goals, not completion requirements.
 
 ## Controls
 
-| Action | Touch / mouse | Keyboard |
-|---|---|---|
-| Choose a ghost | Tap its portrait or its board character | Q switches |
-| Move the active ghost | Direction buttons, or tap an adjacent square | Arrow keys / WASD |
-| Pass the lantern while adjacent | **Pass the lantern** | L |
-| Undo a move | **Undo** | Z |
-| Find the next step | **A little hint** | Tab to the hint button |
-| Restart / select a room | In-game buttons or compact room menu | Tab to a control |
+| Action | Input |
+| --- | --- |
+| Choose a ghost | Click its portrait or character; **Q** switches |
+| Move | Arrow keys / **WASD**, direction buttons, or an adjacent tile |
+| Pass the lantern | **L** or **Pass the lantern**, while adjacent |
+| Undo | **Z** or **Undo** |
+| Hint / restart / room selection | The corresponding in-game buttons |
 
-The hint selects the relevant character and tells you a legal next action on a shortest route from the current state. It does not move the ghost for you. If no route exists from the current position, it recommends undoing or restarting.
+## A little strategy
 
-## Eight rooms with a clear progression
+Plan the helper’s position before sending a ghost through a gate. Leave a square for the partner to stand beside the lantern carrier. A hint selects the relevant ghost and describes the next action on a shortest route from the **current** position; you still perform it yourself. If the position has no solution, undo a few moves or restart.
 
-| Room | Main idea |
-|---|---|
-| 1. A little spark | Find both hearts and reach the two arches |
-| 2. Hold the door | Help a partner through a moon gate |
-| 3. Two little favors | Coordinate moon and star mechanisms |
-| 4. Different paths | Use character-specific tiles |
-| 5. Share the light | Carry and pass the lantern to cross mist |
-| 6. Across the hush | Combine a lantern crossing with a held gate |
-| 7. Moonlit rendezvous | Leave room for a partner in a narrow passage |
-| 8. Home before dawn | Bring the cooperation rules together |
+## Progress and challenge links
 
-The verified shortest starting routes are **8, 18, 22, 20, 19, 24, 28, and 30 moves**. Move counts provide a replay goal rather than a failure limit. You can take as many moves as you need.
+Completed-room best move counts, language, and sound preferences stay in the current browser. Reloading restarts the selected room; unfinished individual moves are not resumed. Records do not synchronize across devices.
 
-## Progress, privacy, and sharing
+A link such as [room 6](https://halloween-love-game.crazy3d.org/#room=6) starts that room from the beginning. Sharing copies your actual completion result and a room link, without uploading a replay. If the clipboard is unavailable, the text appears for manual copying.
 
-Completed-room best move counts, language, and sound preference are stored locally. Reloading restarts the selected room instead of resuming individual unfinished moves. There is no account synchronization, so another device or a cleared browser starts with separate records.
+## Screenshots and video
 
-A room link such as [`#room=6`](https://halloween-love-game.crazy3d.org/#room=6) opens that room from its beginning. Sharing copies the real completion text and room link. It does not upload a replay or contact a social network. Clipboard restrictions fall back to visible text for manual copying.
+![Haunted Hearts in a compact player with both character selectors and persistent direction buttons](docs/images/mobile.jpg)
 
-The game code has no analytics, login, advertising SDK, remote API, or external asset requests. Guarded storage operations let play continue when storage is unavailable. Embedded and direct visits may use different storage partitions. Your hosting provider may have its own standard request logs.
+Actual game screenshot from a compact browser iframe; this demonstrates the small-window layout, not a physical-phone test.
 
-## Compact-player walkthrough
+[Video player and transcript](https://halloween-love-game.crazy3d.org/intro.html) · [Download the MP4](docs/media/intro.mp4)
 
-![Haunted Hearts in the Love Game compact host window, with the room and persistent character and movement controls](docs/images/mobile.jpg)
+The **24-second silent introduction** combines actual screenshots and captions. It is a visual tour, not continuous gameplay footage or an audio demonstration.
 
-Select Luna or Rose, then use the persistent direction buttons. The small-room layout keeps the active character and its moves accessible without requiring precise taps on tiny board cells. A taller host window gives the illustration more room.
+## Frequently asked questions
 
-*Actual interface captured in a browser iframe sized for the host player. This is a compact-window illustration, not a physical-phone test.*
+### Do I need another player?
 
-## Embed Haunted Hearts
+No. Switch between both ghosts to solve every room solo. Two people may share a device and take turns; remote multiplayer is not included.
 
-```html
-<iframe
-  src="https://halloween-love-game.crazy3d.org/?embed=1"
-  title="Haunted Hearts — Halloween cooperative puzzle"
-  style="display:block;width:100%;height:521px;border:0"
-  allow="fullscreen"
-  allowfullscreen
-></iframe>
-```
+### Why did the door close or the mist block me?
 
-An iframe automatically enables the compact layout. `?embed=1` forces it for a direct preview, while `?embed=0` shows the full-page presentation. `#room=1` through `#room=8` selects a room.
+Doors require an occupied matching plate. Mist requires the lantern when entering a tile. Check both conditions before moving the helper.
 
-The main Love Game stage is approximately **833×521** on desktop and can be **356×280 or 326×280** on phones. Browser acceptance exercised those dimensions, **390×650**, and **844×340**. The first room was completed with the direction buttons at 356×280. A **480 px or taller** phone stage is more comfortable when the host can provide it; the compact 280 px mode remains available for short windows.
+### Is this a love calculator?
 
-Board cells shrink in small stages, so use the persistent direction buttons rather than requiring precise taps on tiny tiles. Help and result dialogs scroll internally. Browser viewport checks do not claim physical-phone testing. See [EMBEDDING.md](EMBEDDING.md) for the final host sizing, permissions, and fullscreen contract.
+It is a cooperative puzzle with a heart-and-ghost theme. It does not request names, measure compatibility, or score relationships.
 
-## Local development and tests
+## Run locally and embed
 
-```bash
+Serve the repository root over HTTP:
+
+```sh
 python3 -m http.server 4173
 ```
 
-Open `http://localhost:4173`. There are no dependencies or build steps. ES modules need an HTTP(S) server; a plain `file://` opening is unsuitable.
+Open **http://localhost:4173/**. No build or dependencies are needed. Use HTTP: `file://` can block JavaScript modules.
 
-```bash
+Run the included Node checks:
+
+```sh
 npm test
 ```
 
-The Node tests verify all eight full solution routes, walls and character collisions, role-specific tiles, pressure gates, lantern passing, mist rules, and invalid room-link handling. `engine.js` holds the pure rules and breadth-first solver; `app.js` handles controls, rendering, audio, and local records.
+The tests cover complete routes through all eight rooms, collisions, personal tiles, pressure gates, lantern passing, mist entry, and invalid room links.
 
-## FAQ
+```html
+<iframe src="https://halloween-love-game.crazy3d.org/?embed=1"
+  title="Haunted Hearts"
+  style="display:block;width:100%;height:521px;border:0"
+  allow="fullscreen" allowfullscreen></iframe>
+```
 
-### Do I need a second player?
+The main host stage is about **833×521** on desktop. Compact browser checks also covered **356×280**, **326×280**, **390×650**, and **844×340**. In very short frames, use the persistent direction buttons; a phone stage of **480 px or taller** is more comfortable when available. An iframe enables the compact layout automatically; `?embed=0` restores the full-page presentation.
 
-No. You can switch characters and solve every room solo. Two people can also share the same device and plan or take turns together. The game does not connect two remote devices.
+See [EMBEDDING.md](EMBEDDING.md) for sizing, storage, input focus, and permissions. Measure available iframe height after the host toolbar.
 
-### Why can’t a ghost enter the mist?
+## More little Halloween adventures
 
-Only the current lantern carrier can enter a mist tile. Bring the ghosts next to each other and pass the lantern when the other character needs it.
+- **[Moonlit Mirrors](https://halloween-mirror-hearts.crazy3d.org/)** · [Source](https://github.com/AshinTop/halloween-mirror-hearts) — Guide two ghosts together through reflected puzzle boards.
+- **[Ghost Lanterns 3D](https://halloween-3d.crazy3d.org/)** · [Source](https://github.com/AshinTop/halloween-3d) — Light a pumpkin garden with classic Lights Out logic and soul links.
+- **[Witch’s Candy Blocks](https://halloween-block-blast.crazy3d.org/)** · [Source](https://github.com/AshinTop/halloween-block-blast) — Fit candy shapes into an 8×8 board and complete potion orders.
+- **[Pumpkin Jam](https://halloween-sprunki.crazy3d.org/)** · [Source](https://github.com/AshinTop/halloween-sprunki) — Build an original four-part monster band and try Ghost Echo.
 
-### Why did a gate close?
+## Credits and support
 
-Moon and star gates stay open while a matching plate is occupied. Moving away can close a gate. A partner may need to hold a second plate before the first ghost leaves.
+Created for **AshinTop** and **Midnight Candy Club** with human-directed, AI-assisted design, programming, and review. Artwork and synthesized sounds are original to this project. The game needs no remote account; hosting may independently add scripts or request logs.
 
-### Does a hint show the full solution?
-
-It computes a route from the current state and displays only the next action. Undo and hints are unlimited, and neither prevents completion or a better move record.
-
-### Is this a love calculator or compatibility test?
-
-It is a cooperative logic game with a heart-and-ghost theme. It does not ask for names, assess relationships, or produce compatibility scores.
-
-## More Halloween games
-
-| Game | Another way to play |
-|---|---|
-| [Moonlit Mirrors](https://halloween-mirror-hearts.crazy3d.org/) · [Source](https://github.com/AshinTop/halloween-mirror-hearts) | Move two ghosts simultaneously through reflected rooms. |
-| [Ghost Lanterns 3D](https://halloween-3d.crazy3d.org/) · [Source](https://github.com/AshinTop/halloween-3d) | Solve pumpkin-light puzzles in a three-dimensional scene. |
-| [Witch’s Candy Blocks](https://halloween-block-blast.crazy3d.org/) · [Source](https://github.com/AshinTop/halloween-block-blast) | Fill an 8×8 candy board and brew five fixed orders. |
-| [Pumpkin Jam](https://halloween-sprunki.crazy3d.org/) · [Source](https://github.com/AshinTop/halloween-sprunki) | Build an original monster ensemble and try a sound-memory challenge. |
-
-**简体中文：**《双幽灵心动逃脱》包含 8 个合作解谜房间，可单人切换角色，也可同设备两人轮流操作。帮伙伴开门、分享灯笼并收集两半爱心，支持无限撤销、真实提示与中英文切换。
-
-## Creation credits
-
-Designed, implemented, and reviewed through human-directed AI collaboration. The gameplay implementation, interface, and original SVG artwork were created for this project; optional sound is synthesized in the browser. Screenshots show the actual interface, and the short video is a captioned visual introduction assembled from those captures.
+Enjoyed playing? **[Leave a GitHub Star](https://github.com/AshinTop/halloween-love-game)**. For bug reports, include browser, iframe size, challenge link, and reproduction steps.
