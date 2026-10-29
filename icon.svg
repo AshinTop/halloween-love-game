@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Haunted Hearts</title>
+  <rect width="64" height="64" rx="15" fill="#17182b"/>
+  <path d="M7 31c0-9 6-15 14-15s14 6 14 15v17l-7-4-7 5-7-5-7 4Z" fill="#b4deee"/>
+  <path d="M29 31c0-9 6-15 14-15s14 6 14 15v17l-7-4-7 5-7-5-7 4Z" fill="#efb4cc"/>
+  <g fill="#283049">
+    <ellipse cx="17" cy="30" rx="1.7" ry="2.3"/><ellipse cx="25" cy="30" rx="1.7" ry="2.3"/>
+    <ellipse cx="39" cy="30" rx="1.7" ry="2.3"/><ellipse cx="47" cy="30" rx="1.7" ry="2.3"/>
+  </g>
+  <path d="M18 36q3 3 6 0m16 0q3 3 6 0" fill="none" stroke="#283049" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="m32 56-11-10c-7-7 2-15 11-7 9-8 18 0 11 7Z" fill="#e98baa" stroke="#17182b" stroke-width="2" stroke-linejoin="round"/>
+</svg>
