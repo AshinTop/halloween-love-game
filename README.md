@@ -2,11 +2,11 @@
 
 **Some doors only open when we help each other.** Haunted Hearts is a free Halloween puzzle from Midnight Candy Club, created for [Love Game](https://love-game.org/). Guide two friendly ghosts through eight little haunted rooms, recover their half-hearts, share a lantern, and bring them safely home.
 
-**[GitHub Pages deployment target](https://ashintop.github.io/halloween-love-game/)** · [Embedding guide](EMBEDDING.md)
+**[Play online](https://halloween-love-game.crazy3d.org/)** · [Embedding guide](EMBEDDING.md)
 
-**Deployment status:** GitHub Pages is not live yet. The `ashintop.github.io` links in this document are intended deployment addresses. Use the local-run instructions until the hosted game has been published and verified.
+**Live deployment:** Play on Cloudflare using the link above. The site is deployed from this GitHub repository. Hosting scripts and request logging may be added by Cloudflare independently of the game code.
 
-[Video player and transcript (deployment target)](https://ashintop.github.io/halloween-love-game/intro.html) · [Captioned MP4 file](docs/media/intro.mp4). The 24-second silent introduction uses actual game screenshots; it is not a live gameplay recording.
+[Video player and transcript](https://halloween-love-game.crazy3d.org/intro.html) · [Captioned MP4 file](docs/media/intro.mp4). The 24-second silent introduction uses actual game screenshots; it is not a live gameplay recording.
 
 ![Haunted Hearts: Luna and Rose in a Halloween puzzle room with colored heart goals, pressure gates, and a shared lantern](docs/images/gameplay.jpg)
 
@@ -75,7 +75,7 @@ The verified shortest starting routes are **8, 18, 22, 20, 19, 24, 28, and 30 mo
 
 Completed-room best move counts, language, and sound preference are stored locally. Reloading restarts the selected room instead of resuming individual unfinished moves. There is no account synchronization, so another device or a cleared browser starts with separate records.
 
-A room link such as [`#room=6`](https://ashintop.github.io/halloween-love-game/#room=6) opens that room from its beginning. Sharing copies the real completion text and room link. It does not upload a replay or contact a social network. Clipboard restrictions fall back to visible text for manual copying.
+A room link such as [`#room=6`](https://halloween-love-game.crazy3d.org/#room=6) opens that room from its beginning. Sharing copies the real completion text and room link. It does not upload a replay or contact a social network. Clipboard restrictions fall back to visible text for manual copying.
 
 The game code has no analytics, login, advertising SDK, remote API, or external asset requests. Guarded storage operations let play continue when storage is unavailable. Embedded and direct visits may use different storage partitions. Your hosting provider may have its own standard request logs.
 
@@ -91,7 +91,7 @@ Select Luna or Rose, then use the persistent direction buttons. The small-room l
 
 ```html
 <iframe
-  src="https://ashintop.github.io/halloween-love-game/?embed=1"
+  src="https://halloween-love-game.crazy3d.org/?embed=1"
   title="Haunted Hearts — Halloween cooperative puzzle"
   style="display:block;width:100%;height:521px;border:0"
   allow="fullscreen"
@@ -145,10 +145,10 @@ It is a cooperative logic game with a heart-and-ghost theme. It does not ask for
 
 | Game | Another way to play |
 |---|---|
-| [Moonlit Mirrors](https://github.com/AshinTop/halloween-mirror-hearts) | Move two ghosts simultaneously through reflected rooms. |
-| [Ghost Lanterns 3D](https://github.com/AshinTop/halloween-3d) | Solve pumpkin-light puzzles in a three-dimensional scene. |
-| [Witch’s Candy Blocks](https://github.com/AshinTop/halloween-block-blast) | Fill an 8×8 candy board and brew five fixed orders. |
-| [Pumpkin Jam](https://github.com/AshinTop/halloween-sprunki) | Build an original monster ensemble and try a sound-memory challenge. |
+| [Moonlit Mirrors](https://halloween-mirror-hearts.crazy3d.org/) · [Source](https://github.com/AshinTop/halloween-mirror-hearts) | Move two ghosts simultaneously through reflected rooms. |
+| [Ghost Lanterns 3D](https://halloween-3d.crazy3d.org/) · [Source](https://github.com/AshinTop/halloween-3d) | Solve pumpkin-light puzzles in a three-dimensional scene. |
+| [Witch’s Candy Blocks](https://halloween-block-blast.crazy3d.org/) · [Source](https://github.com/AshinTop/halloween-block-blast) | Fill an 8×8 candy board and brew five fixed orders. |
+| [Pumpkin Jam](https://halloween-sprunki.crazy3d.org/) · [Source](https://github.com/AshinTop/halloween-sprunki) | Build an original monster ensemble and try a sound-memory challenge. |
 
 **简体中文：**《双幽灵心动逃脱》包含 8 个合作解谜房间，可单人切换角色，也可同设备两人轮流操作。帮伙伴开门、分享灯笼并收集两半爱心，支持无限撤销、真实提示与中英文切换。
 

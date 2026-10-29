@@ -6,7 +6,7 @@ Haunted Hearts is a static HTML/CSS/ES-module game with no build step, remote as
 
 ```html
 <iframe
-  src="https://YOUR-GAME-HOST/index.html?embed=1"
+  src="https://halloween-love-game.crazy3d.org/?embed=1"
   title="Haunted Hearts"
   width="100%"
   height="521"
@@ -18,7 +18,7 @@ Haunted Hearts is a static HTML/CSS/ES-module game with no build step, remote as
 ></iframe>
 ```
 
-Replace `YOUR-GAME-HOST` with the deployed game origin. The sandbox value matches the existing Love GamePlayer external stage. Fullscreen is an optional capability; the host can keep its existing fullscreen button or grant the iframe permission as shown above.
+The example uses the live Cloudflare game URL. The sandbox value matches the existing Love GamePlayer external stage. Fullscreen is an optional capability; the host can keep its existing fullscreen button or grant the iframe permission as shown above.
 
 The game automatically detects an iframe and enables its compact layout. `?embed=1` forces the same layout for a direct preview; `?embed=0` disables it for debugging. `#room=1` through `#room=8` selects a room; for example, `index.html?embed=1#room=6`.
 
